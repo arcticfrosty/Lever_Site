@@ -1,0 +1,62 @@
+/* --------------------Footer-------------------- */
+
+/* Copyright */
+footer {
+	width: 100%;
+	background-color: #1b1c1d;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+}
+footer p {
+	color: white;
+	margin: 0;
+	font-size: var(--font-lg);
+	transition: font-size 0.3s ease;
+}
+
+.media-and-copyright {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.media-logo a {
+    text-decoration: none;
+	margin-left: 10px;
+}
+.media-logo img {
+    height: 2rem;
+	padding: 5px;
+	border-radius: var(--border-radius);
+}
+.media-logo-vector {
+    height: 32px;
+}
+.media-logo-sm {
+    display: none;
+}
+.media-logo-lg {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+	footer p {
+		font-size: var(--font-sm);
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .media-and-copyright {
+        justify-content: center;
+    }
+    .media-logo-sm {
+        display: flex;
+        justify-content: center;
+    }
+    .media-logo-lg {
+        display: none;
+    }
+}
+/* End Copyright */
+
+/* --------------------End Footer-------------------- */

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.cdnfonts.com/css/minecraftia");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap'); */
+
+:root {
+    --lg-screen: 8px 100px 8px 100px;
+    --sm-screen: 8px 20px 8px 20px;
+    --font-lg: 1rem;
+    --font-sm: 0.8rem;
+    --border-radius: 5px;
+    --primary-color: #191716;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0;
+	padding: 0; */
+    font-family: Nunito, sans-serif;
+    scroll-behavior: smooth;
+    /* background-image: url('../img/bg/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(15px);
+	overflow-x: hidden; */
+}
+
+/* --------------------Header-------------------- */
+
+/* --------------------End Header-------------------- */
+
+/* --------------------Main-------------------- */
+
+/* Global */
+/* main {
+	margin: 0;
+	padding: 0;
+} */
+
+section {
+    position: relative;
+}
+
+/* .tracking-in-expand {
+	animation: tracking-in-expand 1s ease both;
+}
+@keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
+/* End Global */
+
+/* Cover */
+.img-cover {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    z-index: 0;
+    overflow: hidden;
+}
+/* End Cover */
+
+/* Main Content Container */
+.content-container {
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 1;
+    margin: 0 100px 0 100px;
+    display: flex;
+    transition: margin 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    .content-container {
+        margin: 0 20px 0 20px;
+    }
+}
+.content-container-inner {
+    color: white;
+    margin-top: 70px;
+}
+/* End Main Content Container */
+
+/* Games */
+/* .game-cards {
+	background-image: url("https://wallpapers.com/downloads/high/minecraft-sunbeam-in-forest-hd-zzfzmfwxiwbw5d5x.webp");
+	background-size: cover;
+	background-position: center;
+	border-radius: 1rem;
+	overflow: hidden;
+	height: 30vh;
+}
+.game-cards-container {
+	backdrop-filter: blur(5px);
+	margin: 0;
+	padding: 1rem;
+}
+.game-cards-container h2 {
+	margin: 0;
+}
+.game-cards-container p {
+	margin: 0;
+	text-align: justify;
+} */
+
+/* .game-ani-in {
+	animation: game-ani-in 1s both cubic-bezier(.7,0,0,1);
+}
+@keyframes game-ani-in {
+	0% {
+		transform: scaleX(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scaleX(1);
+		opacity: 1;
+	}
+}
+.game-ani-in-delay-1 {
+	animation-delay: 0.3s;
+}
+.game-ani-in-delay-2 {
+	animation-delay: 0.6s;
+} */
+/* End Games */
+
+/* Store */
+/* .store-items-container {
+	margin: 0;
+	background-color: grey;
+	padding: 1rem;
+	width: 100%;
+}
+.store-items-container h2 {
+	text-align: center;
+	margin: 0;
+}
+.store-items-container img {
+	width: 100%;
+} */
+
+/* End Store */
+
+/* Staff Card */
+/* .staff-card {
+    margin: 10px;
+    display: flex;
+    background-color: #707272;
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease;
+}
+@media screen and (min-width: 768px) {
+    .staff-card:hover {
+        background-color: #5c5e5e;
+    }
+}
+.staff-pfp img {
+    margin: 0.5rem;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: var(--border-radius);
+}
+.staff-pfp h2, .staff-card p {
+    margin: 10px;
+}
+@media screen and (max-width: 768px) {
+    .staff-pfp img {
+        height: 80px;
+    }
+} */
+/* End Staff Card */
+
+/* --------------------End Main-------------------- */
+
+.card-ds {
+    box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.4);
+}
+
+.section-tiles {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 5rem;
+}
+
+.main-title {
+    font-family: 'Abril Fatface', sans-serif;
+    letter-spacing: 3px;
+}
+.cart-section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+}

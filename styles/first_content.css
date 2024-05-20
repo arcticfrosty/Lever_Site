@@ -1,0 +1,48 @@
+.first-section-content {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.first-section-inner {
+	height: 60vh;
+	justify-content: space-between;
+}
+
+.img-logo {
+	width: 300px;
+}
+
+.ip-btn {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(80, 80, 80, 0.8);
+	backdrop-filter: blur(10px);
+}
+
+.ip-btn:hover {
+	background-color: rgba(100, 100, 100, 0.5);
+	border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+.ip-btn-txt {
+	font-family: 'Outfit', sans-serif;
+	letter-spacing: 1px;
+}
+
+@keyframes first-fade-ani {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.first-fade {
+	animation: first-fade-ani 1s ease forwards;
+}

@@ -1,0 +1,17 @@
+.feature-bg {
+    background-color: var(--bs-dark-bg-subtle);
+    transition: background-color 0.5s ease;
+}
+/* .feature-bg:hover {
+    background-color: var(--bs-light-bg-subtle);
+} */
+
+.game-vid iframe {
+    height: 80vh;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    .game-vid iframe {
+        height: 20vh;
+    }
+}
