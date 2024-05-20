@@ -13,7 +13,8 @@
 <body>
     <div class="d-flex p-3 bg-light-subtle">
         <div class="container user-select-none">
-            <h1 class="m-0"><a href="index.html" class="text-decoration-none text-white fw-bolder main-title">LEVERMC</a>
+            <h1 class="m-0"><a href="index.html"
+                    class="text-decoration-none text-white fw-bolder main-title">LEVERMC</a>
             </h1>
         </div>
     </div>
@@ -24,7 +25,7 @@
                     <div class="col bg-light-subtle mb-3 p-5 border rounded m-2">
                         <h1 class="text-center cart-section-title">Your Info</h1>
                         <div class="form-floating mb-3">
-                            <input type="text" oninput="inputChanged()" class="form-control" id="username"
+                            <input type="text" oninput="inputChanged()" class="form-control card-ds" id="username"
                                 placeholder="Enter username" name="username" required>
                             <label for="username">Minecraft Username:</label>
                         </div>
@@ -33,7 +34,7 @@
                         <div class="mb-3">
                             <div class="mb-3">
                                 <label for="rank">Rank:</label>
-                                <select class="form-select" id="rank-select" name="rank-select">
+                                <select class="form-select card-ds" id="rank-select" name="rank-select">
                                     <option value="-">-</option>
                                     <option value="Hero">$5 - Hero</option>
                                     <option value="Legend">$10 - Legend</option>
@@ -42,7 +43,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="coins">Coins:</label>
-                                <select class="form-select" id="coins-select" name="coins-select">
+                                <select class="form-select card-ds" id="coins-select" name="coins-select">
                                     <option value="-">-</option>
                                     <option value="64">$1 - 64 Coins</option>
                                     <option value="350">$5 - 350 Coins</option>
@@ -52,15 +53,37 @@
                             </div>
                         </div>
                         <br>
-                        <div>
-                            <label for="imageUpload">Please upload your reciept:</label>
+                        <div class="cart-section-title text-center">
+                            Payment
+                        </div>
+                        <div class="border p-3 rounded bg-dark card-ds">
+                            <p>
+                                Please make the payment to the account.
+                                After made the payment then attach the recipt as an image in the field below.
+                            </p>
+                            <div class="border p-4 border rounded-3 text-center" style="background-color: #005B7A;">
+                                <img src="https://www.ababank.com/typo3conf/ext/boxmodel/Resources/Private/Templates/ABA/images/aba-web-footer-logo.png"
+                                    alt="ABA" style="width: 80%;">
+                                <br>
+                                <div class="h5 m-0 text-white">
+                                    <br>
+                                    BUY VONG SAKDA
+                                    <br>
+                                    Account: 011377478
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="img/qr/aba_qr.png" alt="QR Code" class="p-1 bg-white rounded border"
+                                        style="width: 30vh;">
+                                </div>
+                            </div>
                             <br>
-                            <input type="file" class="form-control" id="imageUpload" name="image" accept="image" required>
+                            <input type="file" class="form-control" id="imageUpload" name="image" accept="image"
+                                required>
                         </div>
                     </div>
                     <div class="col bg-light-subtle mb-3 p-5 border rounded m-2">
                         <h1 class="text-center cart-section-title">Cart</h1>
-                        <ul class="list-group justify-content-between">
+                        <ul class="list-group justify-content-between card-ds">
                             <li class="list-group-item p-3">
                                 <div>
                                     <ul class="list-group">
@@ -96,9 +119,10 @@
         </form>
     </div>
 
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

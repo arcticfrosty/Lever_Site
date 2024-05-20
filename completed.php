@@ -27,7 +27,7 @@
         <div class="alert alert-success mt-3 text-center">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $webhook_url = 'https://discord.com/api/webhooks/1237109343120392388/Dv17wbGddWJh-SZemEKg5-qljBpvedNpFFKTkvWKsjwzhUMAiHlocZN81f5p4i0ULBM-';
+                $webhook_url = 'https://discord.com/api/webhooks/1237420088227794954/CaafCY2i9ukNJD_jexPyqHnI-f_EYnewKHyqk2BbYIMa9nT_4ndz5PvL6IPJsZIZw-Jn';
                 $username = htmlspecialchars($_POST['username']);
                 $rank = '-';
                 $coins = '-';
@@ -72,7 +72,7 @@
                     return '$' . number_format($number, 2, '.', ',');
                 }
                 $total_amt_format = formatCurrency($total_amt);
-                $format_message = "```Username: {$username}\nRank: {$rank_txt}\nCoins: {$coins_txt}\n\nTotal: {$total_amt_format}```";
+                $format_message = "<@&1050615337839767672> ```Username: {$username}\nRank: {$rank_txt}\nCoins: {$coins_txt}\n\nTotal: {$total_amt_format}```";
                 if (isset($_FILES['image']) && $_FILES['image']['error'] == UPLOAD_ERR_OK) {
                     $file_tmp_path = $_FILES['image']['tmp_name'];
                     $file_name = $_FILES['image']['name'];
