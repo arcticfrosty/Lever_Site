@@ -1,0 +1,14 @@
+.clipboard-icon {
+    opacity: 1;
+    color: white;
+    transition: color 0.5s ease;
+}
+.clipboard-icon:hover {
+    color: rgb(240, 240, 240);
+}
+.clipboard-icon:active {
+    color: rgb(200, 200, 200);
+}
+.store-footer-bg {
+    background-color: #1b1c1d;
+}

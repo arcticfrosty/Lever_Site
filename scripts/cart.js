@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     submit_btn.disabled = true;
     function checkSelectionRank() {
         if (rank.value != "-") {
-            list_cart_rank.textContent = rank.value;
+            list_cart_rank.textContent = rank.value + " (30 Days)";
             switch (rank.value) {
                 case "Hero":
                     rank_price = 5;

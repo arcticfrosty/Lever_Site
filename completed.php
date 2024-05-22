@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Completed!</title>
+    <title>Lever MC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/store.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/logo.png">
 </head>
 
 <body>
@@ -17,8 +19,8 @@
                 <h1 class="m-0"><a href="index.html"
                         class="text-decoration-none text-white fw-bolder main-title">LEVERMC</a>
                 </h1>
-                <a href="store.html" class="text-decoration-none text-white ms-2">
-                    <h3 class="m-0 fw-bolder">Back</h3>
+                <a href="store.html" class="text-decoration-none text-white ms-2 btn btn-md btn-secondary">
+                    <h5 class="m-0 fw-bolder">Back</h5>
                 </a>
             </div>
         </div>
@@ -91,9 +93,10 @@
                         curl_setopt($ch, CURLOPT_POST, 1);
                         curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
                         $response = curl_exec($ch);
+                        $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
                         curl_close($ch);
                         if ($response === false) {
-                            echo "Error sending webhook: " . curl_error($ch);
+                            echo "Error sending webhook: " . curl_error($ch) . " (HTTP Code:" . $http_code . ")";
                         } else {
                             echo "<strong>Success!</strong> transaction completed! Our staff will review your transaction and deliver to you shortly.";
                         }
@@ -109,6 +112,9 @@
             ?>
         </div>
     </div>
+    <!-- <div class="position-relative bottom-0 store-footer-bg user-select-none">
+        <p class="p-3 m-0 text-center text-xl-start text-sm-center">&copy; Copyright LEVERMC 2024. All rights reserved.</p>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

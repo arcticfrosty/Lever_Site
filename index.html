@@ -13,7 +13,6 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f586b480be.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/first_content.css" />
@@ -21,8 +20,8 @@
     <link rel="stylesheet" href="styles/shop.css" />
     <link rel="stylesheet" href="styles/staff_list.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-
-    <title>LeverMC</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/logo.png">
+    <title>Lever MC</title>
 </head>
 
 <body>
@@ -102,7 +101,7 @@
                 <div class="first-section-content user-select-none">
                     <div class="d-flex flex-column align-items-center first-section-inner">
                         <div>
-                            <div data-bs-toggle="tooltip" data-bs-placement="top" title="Click to copy">
+                            <div data-bs-toggle="tooltip" data-bs-placement="top" title="Click to copy" class="card-ds">
                                 <button type="button" class="btn ip-btn" onclick="copyIpAddress()"
                                     data-bs-toggle="modal" data-bs-target="#myModal">
                                     <h1 class="m-2 ip-btn-txt fw-bold text-white">PLAY.LEVERMC.ORG</h1>
@@ -124,7 +123,7 @@
                                     tempInput.setAttribute("value", ipAddress);
                                     document.body.appendChild(tempInput);
                                     tempInput.select();
-                                    tempInput.setSelectionRange(0, 99999);
+                                    tempInput.setSelectionRange(0, ipAddress.length);
                                     document.execCommand("copy");
                                     document.body.removeChild(tempInput);
                                 }
@@ -479,6 +478,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="ps-2 pe-2">
+                            <div class="alert alert-warning card-ds">
+                                <strong>Note!</strong> All rank will expire after 30 days!
+                            </div>
+                        </div>
                     </div>
                     <br>
                     <div class="border bg-light-subtle p-0 rounded">
@@ -801,7 +805,6 @@
         <!-- End About -->
     </main>
     <script src="scripts/script.js" defer></script>
-    <!-- <script src="scripts/mc_prot.js" defer></script> -->
 </body>
 
 </html>
